@@ -1,0 +1,12 @@
+.git
+.gitignore
+.idea
+var/cache
+var/log
+var/sessions
+tests
+*.dist
+*.md
+compose*.yaml
+.env.local
+.env.*.local

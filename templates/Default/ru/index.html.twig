@@ -1,0 +1,106 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 px-0">
+                    <h1 class="display-5 font-italic">{% trans %}Доброго времени суток!{% endtrans %}</h1>
+                    <div style="padding: 10px;">
+                        <p class="lead my-3">Меня зовут Иван и если вы читаете эти строки - значит я сейчас в поиске работы и готов рассмотреть предложения. Мои интересы сейчас находятся в области WEB-разработки, управлении проектами и командами разработчиков.</p>
+                        <p class="lead my-3" style="font-style: italic;">( Этот сайт я сделал для того, чтобы те, кто со мной не сработается, поняли это до того, как я начну делать тестовые задания, начну собеседоваться по скайпу или ехать на реальную встречу в офис. Тут достаточно информации, чтобы принять решение о том, захотите ли вы со мной работать. Когда руководителю 30, а мне 44 года + опыт руководящей работы - мы должны подходить как ключик к замку. Иначе ничего не получится.)</p>
+                        <p class="lead mb-0" style="border-radius: 5px; background-color: #FFFFFF; margin: 0 auto; text-align: center;">
+                            <a href="{{ path('search') }}" class="text-white font-weight-bold" >
+                                <span style="color: #000000; text-decoration-line: underline;">Пропустить лирику и сразу о деле</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 px-0">
+                    <img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/my.jpg" class="img-responsive img-rounded center-block">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Обо мне</strong>
+                        <h3 class="mb-0">Немного о жизни</h3>
+                        <p class="card-text mb-auto">В жизни много чего происходит - главное всегда оставаться человеком.</p>
+                        <a href="{{ path('about') }}" class="stretched-link">Далее</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/about_for_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Опыт</strong>
+                        <h3 class="mb-0">... и о работе</h3>
+                        <p class="mb-auto">Перепробовал много чего, но в том или ином виде в IT с 1993 года</p>
+                        <a href="{{ path('experience') }}" class="stretched-link">Далее</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/experiense_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Проекты</strong>
+                        <h3 class="mb-0">Реальные вещи</h3>
+                        <p class="card-text mb-auto">Здесь можно посмотреть чего же я понаделал.</p>
+                        <a href="{{ path('projects') }}" class="stretched-link">Далее</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/projects_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Технологии</strong>
+                        <h3 class="mb-0">Инструменты</h3>
+                        <p class="mb-auto">На картинке то, чем я владею достаточно хорошо чтобы не бояться :)</p>
+                        <a href="{{ path('technology') }}" class="stretched-link">Далее</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/technology_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Интересы</strong>
+                        <h3 class="mb-0">Профпригодность</h3>
+                        <p class="card-text mb-auto">Надо двигаться вперед хотя бы для того чтобы оставаться на месте.</p>
+                        <a href="{{ path('interest') }}" class="stretched-link">Далее</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/interest_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Увлечения</strong>
+                        <h3 class="mb-0">Для души</h3>
+                        <p class="mb-auto">Нет ничего лучше неспешного разговора у ночного костра в горах после 40 км с рюкзаком</p>
+                        <a href="{{ path('hobby') }}" class="stretched-link">Далее</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/hobby_list.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

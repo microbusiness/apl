@@ -1,0 +1,41 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Job options that suit me</h2>
+
+                    <p>I am considering the possibility of working as a development manager and as a simple developer. But only remotely.</p>
+                    <hr>
+                    <h3>PHP developer remotely - from $ 2500 per month. Only to an English-speaking company.</h3>
+                    <p>What you get: an employee who just needs to voice the requirements and get the optimal result, who does not need to be monitored and trained, who calculates the deadlines for a maximum of +/- 10%, who will "enter" your project in two or three days and start issuing a code. </p>
+                    <p>I do not drink alcohol, do not smoke. I monitor my health and do not "burn out". I calmly talk about problems and I always try to find a compromise.</p>
+
+                    <hr>
+                    <h3>Leading PHP developer remotely to a Russian-speaking company - from $ 3000 per month.</h3>
+                    <p>What you get: the same as in the previous paragraph + plus very fast start</p>
+                    <hr>
+                    <h3>Team lead - from $ 3500 per month.</h3>
+                    <p>What we get: an experienced employee who knows how to establish a clear team work, taking into account the specifics of the project, management, employees.</p>
+
+                    <hr>
+                    <h3>Development manager, technical director - from $ 5000 per month.</h3>
+                    <p>What we get: the same as the team lead + the presence of a remote team of 3-4 middle-level people + an extra-class admin, which I can assemble, if necessary, quickly enough</p>
+
+                    <p><strong>{{ "now"|date("d.m.Y") }}</strong></p>
+                </div><!-- /.blog-post -->
+
+                <nav class="blog-pagination">
+                    <a class="btn btn-outline-primary" href="{{ path('index') }}">Main page</a>
+                </nav>
+
+            </div><!-- /.blog-main -->
+
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+{% endblock %}

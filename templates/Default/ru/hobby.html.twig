@@ -1,0 +1,46 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Просто фотки</h2>
+                    <p><img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/photo/Yoshinkan-Aikido-logo.png" /></p>
+                    <p><img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/photo/SNV30908.JPG" /></p>
+                    <p><img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/photo/IMG_3956.JPG" /></p>
+                    <p><img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/photo/IMG_3458.JPG" /></p>
+                    <p><img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/photo/IMG_3435.JPG" /></p>
+                    <p><img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/photo/IMG_1103.JPG" /></p>
+                    <p><img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/photo/DSC08244.jpg" /></p>
+                </div><!-- /.blog-post -->
+
+                <nav class="blog-pagination">
+                    <a class="btn btn-outline-primary" href="{{ path('index', {'_locale' : app.request.locale }) }}">На главную</a>
+                </nav>
+
+            </div><!-- /.blog-main -->
+
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="font-italic">Коротко</h4>
+                    <p class="mb-0">Я за активный отдых!!!</p>
+                    <p></p>
+                    <p class="mb-0">
+                        <span class="badge badge-secondary">Айкидо Yoshinkan</span>
+                        <span class="badge badge-secondary">Горный треккинг</span>
+                        <span class="badge badge-secondary">Дайвинг</span>
+                        <span class="badge badge-secondary">Серфинг</span>
+                        <span class="badge badge-secondary">Просто путешествия</span>
+                    </p>
+                </div>
+                {% include('widgets/' ~  app.request.locale  ~ '/gihub.html.twig') %}
+            </aside><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+{% endblock %}
+

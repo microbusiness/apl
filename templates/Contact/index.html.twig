@@ -1,0 +1,52 @@
+{% extends "::layout.html.twig" %}
+{% block content %}
+    <div class="jumbotron">
+        {% if is_login %}
+            <div class="row">
+                <div class="col-lg-4">
+                    {% if profile %}
+                        {% if photo %}
+                            <img src="{{ photo.url }}" class="img-responsive img-rounded center-block">
+                        {% endif %}
+                        <p class="text-danger">{{ profile.first_name }}</p>
+                        <p class="text-danger">{{ profile.last_name }}</p>
+                        <a href="{{ profile.link }}" target="_blank">Мой Facebook</a>
+                    {% endif %}
+
+
+                </div>
+                <div class="col-lg-8">
+                    <p class="lead">Вы можете написать мне в ленту Facebook прямо отсюда</p>
+                    <form method="post" action="{{ path('send_message') }}">
+                        <div style="margin: 10px;"><textarea class="form-control" rows="3" name="message"></textarea></div>
+                        <div><button type="submit" class="btn btn-lg btn-success" >Отправить</button></div>
+                    </form>
+                    {% if feed %}
+                        <div style="margin: 20px;border-top: solid 4px #00ffff; padding: 20px;">
+                            <p class="text-center">Последние сообщения</p>
+                        </div>
+                        <div>
+                            {% for feedItem in feed %}
+                                <p class="text-info text-left">{{ feedItem.created_time.format('d.m.Y H:i ') }} - {{ feedItem.message }}</p>
+                            {% endfor %}
+                        </div>
+
+
+                    {% endif %}
+
+
+                </div>
+            </div>
+
+        {% else %}
+            <div>
+                <a href="{{ login_url }}">Авторизоваться</a>
+            </div>
+        {% endif %}
+
+        
+    </div>
+
+
+{% endblock %}
+

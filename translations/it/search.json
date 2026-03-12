@@ -1,0 +1,22 @@
+{
+  "title": "Opzioni di lavoro che mi si addicono",
+  "date": "01.03.2026",
+  "intro": "Sto valutando la possibilità di lavorare sia come responsabile dello sviluppo che come semplice sviluppatore. Ma solo da remoto.",
+  "phpDev": {
+    "title": "PHP developer da remoto — da $2500 al mese",
+    "note": "Solo per aziende di lingua inglese.",
+    "text": "Cosa ottenete: un dipendente a cui basta comunicare i requisiti per ottenere il risultato ottimale, che non ha bisogno di essere monitorato e formato, che calcola le scadenze con una precisione massima di +/- 10%, che \"entrerà\" nel vostro progetto in due o tre giorni e inizierà a produrre codice. Non bevo alcolici, non fumo. Curo la mia salute e non vado in \"burnout\". Parlo dei problemi con calma e cerco sempre un compromesso."
+  },
+  "leadDev": {
+    "title": "Lead PHP developer da remoto per azienda di lingua russa — da $3000 al mese",
+    "text": "Cosa ottenete: lo stesso del punto precedente + un avvio molto rapido."
+  },
+  "teamLead": {
+    "title": "Team lead — da $3500 al mese",
+    "text": "Cosa otteniamo: un dipendente esperto capace di stabilire un lavoro di squadra chiaro, tenendo conto delle specificità del progetto, del management e dei collaboratori."
+  },
+  "manager": {
+    "title": "Responsabile dello sviluppo, direttore tecnico — da $5000 al mese",
+    "text": "Cosa otteniamo: lo stesso del team lead + un team remoto di 3-4 sviluppatori di medio livello + un amministratore di prima classe, che posso assemblare in tempi abbastanza rapidi se necessario."
+  }
+}

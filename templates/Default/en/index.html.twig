@@ -1,0 +1,105 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 px-0">
+                    <h1 class="display-5 font-italic">Good day!</h1>
+                    <div style="padding: 10px;">
+                        <p class="lead my-3">My name is Ivan. I am now looking for a job and am ready to consider offers. My interests are now in the field of WEB development, project management and development teams.</p>
+                        <p class="lead mb-0" style="border-radius: 5px; background-color: #FFFFFF; margin: 0 auto; text-align: center;">
+                            <a href="{{ path('search') }}" class="text-white font-weight-bold" >
+                                <span style="color: #000000; text-decoration-line: underline;">More information on what I'm looking for</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 px-0">
+                    <img style="max-width: 100%;" src="https://63900.selcdn.ru/iv/portfolio/my.jpg" class="img-responsive img-rounded center-block">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">About me</strong>
+                        <h3 class="mb-0">A little about life</h3>
+                        <p class="card-text mb-auto">A lot of things happen in life - the main thing is to always remain human.</p>
+                        <a href="{{ path('about') }}" class="stretched-link">More details</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/about_for_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Experience</strong>
+                        <h3 class="mb-0">... and about work</h3>
+                        <p class="mb-auto">I've tried a lot of things, but in one form or another in IT since 1993</p>
+                        <a href="{{ path('experience') }}" class="stretched-link">More details</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/experiense_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Projects</strong>
+                        <h3 class="mb-0">Real things</h3>
+                        <p class="card-text mb-auto">Here you can see what I have done.</p>
+                        <a href="{{ path('projects') }}" class="stretched-link">More details</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/projects_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Technology</strong>
+                        <h3 class="mb-0">Tools</h3>
+                        <p class="mb-auto">The picture shows what I own well enough not to be afraid :)</p>
+                        <a href="{{ path('technology') }}" class="stretched-link">More details</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/technology_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Interests</strong>
+                        <h3 class="mb-0">Professional suitability</h3>
+                        <p class="card-text mb-auto">We must move forward at least to stay in place..</p>
+                        <a href="{{ path('interest') }}" class="stretched-link">More details</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/interest_list.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Hobbies</strong>
+                        <h3 class="mb-0">For the soul</h3>
+                        <p class="mb-auto">There is nothing better than a leisurely conversation by a night fire in the mountains after 40 km with a backpack</p>
+                        <a href="{{ path('hobby') }}" class="stretched-link">More details</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://63900.selcdn.ru/iv/portfolio/hobby_list.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

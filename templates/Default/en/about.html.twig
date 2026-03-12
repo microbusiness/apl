@@ -1,0 +1,49 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">It's hard to write about yourself</h2>
+                    <p class="blog-post-meta">{{ "now"|date("d.m.Y") }}</p>
+
+                    <p>Most people at the age of 16 want to become famous artists, politicians, businessmen, scientists. At 25 - cool pros, leaders in their field. At 30 - you want to focus only on making money. At 40 - just a quiet life.</p>
+                    <p>It's not about me! It's just that I already know the limits of my capabilities.</p>
+                    <hr>
+                    <p>I believe that for every person there are some tests that he must go through, as well as goals - which he must achieve. And life itself will direct a person to where he is realized as fully as possible.</p>
+                    <p>What does this mean in simple terms?</p>
+                    <p>This means that there is no need to look for troubles, but difficulties should never be avoided.</p>
+                    <p>Look for worthy goals in life, but discard those that you will strive for only under certain conditions (money, power, fame).</p>
+                    <p>At the same time, one must understand that it is almost impossible to achieve really worthy goals alone. Therefore, we must value the opportunity to have positive, result-oriented colleagues.</p>
+                    <p><strong>And at the same time always remain human</strong></p>
+                    <p><strong>{{ "now"|date("d.m.Y") }}</strong></p>
+                </div><!-- /.blog-post -->
+
+                <nav class="blog-pagination">
+                    <a class="btn btn-outline-primary" href="{{ path('index') }}">Main page</a>
+                </nav>
+
+            </div><!-- /.blog-main -->
+
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="font-italic">Summary</h4>
+                    <p class="mb-0">There are no good and bad people, deeds, actions - there is an imbalance.</p>
+                    <p></p>
+                    <p class="mb-0"><span class="badge badge-secondary">About me</span> An intellectual adventurer, wise with experience and therefore safe for others.</p>
+                    <p class="mb-0"><span class="badge badge-secondary">Family</span> Family is half of me. No more, but no less.</p>
+                    <p class="mb-0"><span class="badge badge-secondary">Friends</span> Friends are checked in trouble, and since I had few troubles in my life, there are few friends.</p>
+                    <p class="mb-0"><span class="badge badge-secondary">Work</span> Any work can be made interesting in about 40 minutes</p>
+                    <p class="mb-0"><span class="badge badge-secondary">Politics</span> A self-respecting person will do business, and not talk about things that he cannot change. This also applies to football.</p>
+                    <p class="mb-0"><span class="badge badge-secondary">Happiness</span> Happiness is not a goal. This is an indicator of the balance of the soul.</p>
+                </div>
+                {% include('widgets/' ~  app.request.locale  ~ '/gihub.html.twig') %}
+            </aside><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+{% endblock %}
